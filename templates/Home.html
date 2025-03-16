@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Електроніка</title>
+    <title>{{title}}</title>
        <style>
      nav {
        text-align: center; /* Центруємо елемент nav */
@@ -26,10 +26,10 @@
 <h1 style="text-align: center;">Інформація</h1>
   <nav>
     <ul>
-      <li> <a href="/home_1">Головна</a></li>
-      <li><a href="/home_2">Товари</a></li>
-        <li><a href="/home_3">Поради</a></li>
-    <li><a href="/home_4">Огляди</a></li>
+        <li><a href="{% url 'home_1' %}">Головна</a></li>
+        <li><a href="{% url 'home_2' %}">Товари</a></li>
+        <li><a href="{% url 'home_3' %}">Поради</a></li>
+        <li><a href="{% url 'home_4' %}">Огляди</a></li>
     </ul>
   </nav>
   <main class="content">
